@@ -1,0 +1,97 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	color: #000;
+	font-size: 16px;
+	line-height: 1.4;
+	padding-bottom: 100px;
+}
+header {
+	background-color: #00007f;
+	color: #fff;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	text-align: center;
+}
+h1 {
+	margin: 0;
+	font-size: 36px;
+}
+main {
+	padding: 20px;
+}
+p {
+	padding: 0;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
+.profile-pic {
+	display: block;
+	margin: 0 auto 20px;
+	border-radius: 50%;
+	width: 200px; /* Adjust the size as needed */
+	height: 200px; /* Adjust the size as needed */
+	object-fit: cover;
+}
+h2 {
+	margin-bottom: 10px;
+	color: #00007f;
+}
+section{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.section p {
+	margin: 0;
+}
+.hoverable-text {
+	position: relative;
+	display: inline-block;
+	text-decoration: underline dotted;
+	color: #0000ff
+}
+.hoverable-text:hover .hover-text {
+	display: block;
+}
+.hover-text {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: medium;
+	font-weight: normal;
+}
+.console-text {
+	font-family: Consolas, monospace;
+}
+.chinese {
+	font-family: SimSun;
+	font-weight: bold;
+}
+.button {
+	position: relative;
+	display: inline-block;
+	color: #0000ff;
+	cursor: pointer;
+}
+.button:hover .hover-text {
+	display: block;
+}
+ul {
+	padding: 0;
+}
+a:visited {
+	color: #0000ff
+}
+li {
+	padding-bottom: 1em;
+}
+.par::before {
+	content: "-";
+}
