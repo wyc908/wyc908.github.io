@@ -27,14 +27,6 @@ p {
 	margin-top: 0.75em;
 	margin-bottom: 0.75em;
 }
-.profile-pic {
-	display: block;
-	margin: 0 auto 20px;
-	border-radius: 50%;
-	width: 200px; /* Adjust the size as needed */
-	height: 200px; /* Adjust the size as needed */
-	object-fit: cover;
-}
 h2 {
 	margin-bottom: 10px;
 	color: #00007f;
@@ -48,7 +40,6 @@ section{
 }
 .hoverable-text {
 	position: relative;
-	display: inline-block;
 	text-decoration: underline dotted;
 	color: #0000ff
 }
@@ -79,9 +70,6 @@ section{
 	display: inline-block;
 	color: #0000ff;
 	cursor: pointer;
-}
-.button:hover .hover-text {
-	display: block;
 }
 ul {
 	padding: 0;

@@ -20,8 +20,6 @@
 
 <main>
 	
-	<img src="photo.png" class="profile-pic" style="display:none;"> <!-- Add the path to your photo here -->
-
 	<h2>
 		<span onclick="expandSection('section.about','click.about')" id="click.about" class="button">
 			▼
@@ -29,17 +27,37 @@
 		About Me
 	</h2>
 	<section id="section.about">
+		<div class="hoverable-text" style="float:left; margin-right:2em; margin-bottom:1.5em;">
+			<img src="photo.png" style="height:15em;">
+			<span class="hover-text">Photo by Lijie Chen.</span>
+		</div>
 		<p class="par">
-			I am Yichuan Wang, a third-year undergraduate student from <a href="https://iiis.tsinghua.edu.cn/en/">Institute for Interdisciplinary Information Sciences, Tsinghua University</a>
-		</p>
-		<p class="par">
-			My research interest lies broadly in <span class="hoverable-text">Theoretical Computer Science (TCS)<span class="hover-text">When I talk about TCS, I usually refer to Computational Complexity Theory.</span></span>. I have previously published works on space-bounded derandomization. However, what I appreciate the most is the paradigm of studying the connections between the power of a computational model and the hardness of its meta-computational problems<span style="display:none;">, e.g. [Wil11] and [CIKK16]</span>. I also look forward to seeing how developments in TCS will reshape human's understanding of the universe after 50 (or 100) years.
+			I am Yichuan Wang, a third-year undergraduate student from <a href="https://iiis.tsinghua.edu.cn/en/">Institute for Interdisciplinary Information Sciences, Tsinghua University</a>. My research interest lies broadly in <span class="hoverable-text">Theoretical Computer Science (TCS)<span class="hover-text">When I talk about TCS, I usually refer to Computational Complexity Theory.</span></span>.
 		</p>
 		<p class="par">
 			In Beijing, I was advised by <a href="http://www.chenyilei.net/">Yilei Chen</a> and <a href="https://www.kuancheng88.com/">Kuan Cheng</a>. In Spring 2024, I am visiting UC Berkeley under the supervision of <a href="https://chen-lijie.github.io/">Lijie Chen</a> and <a href="https://www.avishaytal.org/">Avishay Tal</a>.
 		</p>
 		<p class="par">
 			I studied Mathematical Olympiad during high school and won the gold medal with the unique perfect score in the <a href="https://www.imo-official.org/year_individual_r.aspx?year=2021">62nd International Mathematical Olympiad (2021)</a>.
+		</p>
+	</section>
+	<div style="clear:both;"></div>
+
+	<h2>
+		<span onclick="expandSection('section.research-interest','click.research-interest')" id="click.research-interest" class="button">
+			▼
+		</span> 
+		Research Interests
+	</h2>
+	<section id="section.research-interest">
+		<p class="par">
+			In Theoretical Computer Science (TCS), people study the powers and limits of theoretical computation models. Our ultimate goal is to understand the essence of computation, especially the essence of computational intractability, where our understanding remains limited. I am looking forward to seeing that after 50 (or 100) years, humans will have proved \(\mathsf{P}\neq\mathsf{PSPACE}\) (or even the existence of OWF) and also developed a good intuition on where the computational intractability comes from, which may reshape human's understanding of our universe.
+		</p>
+		<p class="par">
+			I appreciate the works in the last century that formalized concepts like "computation" and "algorithm". I am also impressed by the recent paradigm of studying the connections between the power of a computational model and the hardness of its meta-computational problems, as exemplified by works such as <a href="https://people.csail.mit.edu/rrw/acc-lbs.pdf">[Wil10]</a> and <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CCC.2016.10">[CIKK16]</a>.
+		</p>
+		<p class="par">
+			I have previously published works on space-bounded derandomization<span style="display:none;"> and streaming lower bounds</span>.
 		</p>
 	</section>
 
@@ -51,7 +69,7 @@
 	</h2>
 	<section id="section.publications">	
 		<ul>
-			<li style="display: none;">
+			<li style="display:none;">
 				<strong><a href="">Tight Streaming Lower Bounds for Deterministic Approximate Counting</a></strong>;<br>
 					Yichuan Wang.
 			</li>
@@ -82,6 +100,7 @@
 				clientSecret: 'a82a7c1ee93a484b0474ac87618f861c6502b472',
 				repo: 'wyc908.github.io.comments',
 				owner: 'wyc908',
+				admin: ['wyc908'],
 				id: location.pathname, 
 				distractionFreeMode: false
 			});
