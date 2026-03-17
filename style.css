@@ -74,6 +74,9 @@ section{
 ul {
 	padding: 0;
 }
+a {
+	color: #0000ff
+}
 a:visited {
 	color: #0000ff
 }
